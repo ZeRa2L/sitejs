@@ -22,9 +22,16 @@ a {
   margin-left: auto;
 }
 
+.display_flex {
+  display: flex;
+}
+
+p  {
+  line-height: 30px;
+}
+
 .header {
   width: 100%;
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -108,11 +115,49 @@ a {
   inset 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  margin-top: 80px;
+.site-hero {
+  height: 800px;
   width: 100%;
-  height: 600px;
+  background: #fff url(img/site-hero.jpg) no-repeat;
   background-size: cover;
+  position: relative;
   overflow: hidden;
-  background: #fff url('img/site-hero.jpg') center no-repeat;
+  z-index: -1;
+}
+
+.card {
+  margin-top: 200px;
+  width: 50%;
+
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.site-hero-text {
+  margin-top: 200px;
+  width: 50%;
+}
+
+.btn-green {
+  padding: 15px 30px;
+  background-color: #7beec7;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.5s;
+  font-weight: 700;
+}
+
+.btn-green:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.397);
+}
+
+.site-hero-text p {
+  margin-bottom: 100px;
+}
+
+.card-item {
+  background-color: rgb(204, 84, 63);
+  width: 250px;
+  height: 250px;
+  transition: transform 0.2s;
 }

@@ -26,6 +26,10 @@ a {
   display: flex;
 }
 
+.display_block {
+  display: block;
+}
+
 p  {
   line-height: 30px;
 }
@@ -35,7 +39,10 @@ p  {
   top: 0;
   left: 0;
   right: 0;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.473);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.473);
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.541);
+  z-index: 1;
 }
 
 .header__inner {
@@ -118,24 +125,28 @@ p  {
 .site-hero {
   height: 800px;
   width: 100%;
-  background: #fff url(img/site-hero.jpg) no-repeat;
+  background: url(img/site-hero.jpg);
   background-size: cover;
   position: relative;
   overflow: hidden;
-  z-index: -1;
 }
 
-.card {
+.site-hero-card {
   margin-top: 200px;
   width: 50%;
-
-  perspective: 1000px;
-  transform-style: preserve-3d;
 }
 
 .site-hero-text {
   margin-top: 200px;
   width: 50%;
+}
+
+.site-hero-text p {
+  margin-bottom: 100px;
+}
+
+.site-hero-text h2 {
+  margin-top: 0;
 }
 
 .btn-green {
@@ -151,13 +162,34 @@ p  {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.397);
 }
 
-.site-hero-text p {
-  margin-bottom: 100px;
+.card {
+  width: 300px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
 }
 
 .card-item {
-  background-color: rgb(204, 84, 63);
-  width: 250px;
-  height: 250px;
+  background-color: #7beec7;
+  width: 300px;
+  height: 300px;
+
   transition: transform 0.2s;
+}
+
+.galary {
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.galary-item {
+  background-color: #7beec7;
+  width: 200px;
+  height: 200px;
+  transition: transform 0.5s;
+}
+
+.galary-item:hover {
+  transform: scale(1.1);
 }

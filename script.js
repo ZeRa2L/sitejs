@@ -1,9 +1,9 @@
-const cards = document.querySelectorAll('card');
+const cards = document.querySelectorAll('.card');
 
 for (let i = 0; i < cards.length; i++) {
     const card = cards[i];
     card.addEventListener('mousemove', startRotate);
-    card.addEventListener('mousemove', stopRotate);
+    card.addEventListener('mouseout', stopRotate);
 }
 
 function startRotate(event) {

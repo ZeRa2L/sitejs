@@ -10,6 +10,10 @@ body {
   background-color: #fff;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }

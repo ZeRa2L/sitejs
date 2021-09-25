@@ -38,6 +38,28 @@ p  {
   line-height: 30px;
 }
 
+.transparency {
+  transform: translate(0px ,120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.transparency._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.transparency-2 {
+  transform: translate(60%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.transparency-2._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
 .header {
   width: 100%;
   top: 0;
@@ -270,3 +292,8 @@ p  {
 }
 
 /*popup*/
+
+.footer-container {
+  width: 100%;
+  height: 500px;
+}

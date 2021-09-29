@@ -60,6 +60,48 @@ p  {
   opacity: 1;
 }
 
+.text-transparency {
+  text-align: left;
+}
+
+.section {
+  text-align: center;
+  margin: 100px 0;
+}
+
+.section-header {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.section-title  {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section-small-title {
+  font-size: 20px;
+  font-weight: 300;
+  color: rgb(75, 75, 75);
+}
+
+.section-small-title:after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 5px;
+  margin: 30px auto 30px;
+  background-color: #7beec7;
+}
+
+.section-text {
+  color: rgb(129, 129, 129);
+  line-height: 30px;
+  margin: 0 150px;
+}
+
 .header {
   width: 100%;
   top: 0;

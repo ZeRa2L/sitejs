@@ -50,7 +50,7 @@ p  {
 }
 
 .transparency-2 {
-  transform: translate(60%, 0px);
+  transform: translate(20%, 0px);
   opacity: 0;
   transition: all 0.8s ease 0s;
 }
@@ -60,13 +60,24 @@ p  {
   opacity: 1;
 }
 
+.transparency-3 {
+  transform: translate(-10%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.transparency-3._active {
+  transform: translate(10%, 0px);
+  opacity: 1;
+}
+
 .text-transparency {
   text-align: left;
 }
 
 .section {
   text-align: center;
-  margin: 100px 0;
+  margin: 120px 0;
 }
 
 .section-header {
@@ -186,27 +197,38 @@ p  {
   inset 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.site-hero {
-  height: 800px;
-  width: 100%;
+.main-img {
+  height: 900px;
   background: url(img/site-hero.jpg);
   background-size: cover;
-  position: relative;
-  overflow: hidden;
+  margin-top: 80px;
 }
 
-.site-hero-card {
-  margin-top: 250px;
+.main-text {
+}
+
+.main-text-1,
+.main-text-2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.site-hero {
+  width: 100%;
+  margin-top: 120px;
+}
+
+.site-hero-card,
+.site-hero-text {
   width: 50%;
 }
 
 .site-hero-text {
-  margin-top: 250px;
-  width: 50%;
+  text-align: left;
 }
 
 .site-hero-text p {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .site-hero-text h2 {

@@ -67,23 +67,11 @@ setTimeout(() => {
 
 /* вылет из неоткуда */
 
-/* паралакс */
+/* menu */
 
-function onEntry(entry) {
-    entry.forEach(change => {
-      if (change.isIntersecting) {
-       change.target.classList.add('element-show');
-      }
+document.querySelector('.header-burger').addEventListener('click', function(
+    ){
+    document.querySelector('.header-burger span').classList.toggle('active')
     });
-  }
-  
-  let options = {
-    threshold: [0.5] };
-  let observer = new IntersectionObserver(onEntry, options);
-  let elements = document.querySelectorAll('.element-animation');
-  
-  for (let elm of elements) {
-    observer.observe(elm);
-  }
 
-/* паралакс */
+/* menu */

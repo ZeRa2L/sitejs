@@ -71,7 +71,8 @@ setTimeout(() => {
 
 document.querySelector('.header-burger').addEventListener('click', function(
     ){
-    document.querySelector('.header-burger span').classList.toggle('active')
+    document.querySelector('.header-burger span').classList.toggle('active');
+    document.querySelector('.menu').classList.toggle('animate');
     });
 
 /* menu */
